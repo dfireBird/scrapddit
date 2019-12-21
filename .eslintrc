@@ -1,3 +1,7 @@
 {
-    "extends": "airbnb"
+    "extends": "airbnb",
+    "indent": ["error", "4"],
+    "new - cap": ["error", {
+        "newIsCap": false
+    }]
 }
