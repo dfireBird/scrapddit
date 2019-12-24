@@ -6,6 +6,9 @@ The program only retrives titles of top 25 posts from a subreddit and reddit use
 
 Used libraries: [snoowrap](https://github.com/not-an-aardvark/snoowrap) and [commander](https://github.com/tj/commander.js)
 
+[![asciicast](https://asciinema.org/a/Ja3ARYiKshUdvpO2ygBBUSNEg.svg)](https://asciinema.org/a/Ja3ARYiKshUdvpO2ygBBUSNEg)
+
+
 ## Usage
 
 Download the program from [here](https://github.com/Phoenix181/scrapddit/releases/tag/v1.0-beta)
