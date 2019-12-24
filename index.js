@@ -3,12 +3,12 @@ const program = require('commander');
 
 program
     .version('1.0.0')
-    .description('Retrieves post from a subreddit or a reddit user. \n');
+    .description('Retrieves post titles from a subreddit or a reddit user. \n');
 
 program
     .command('user <username>')
     .alias('u')
-    .description('Get posts from a user.')
+    .description('Get post titles from a user.')
     .action((username) => {
         Reddit.getUser(username).getSubmissions()
             .then((Submissions) => {
@@ -23,7 +23,7 @@ program
 program
     .command('subreddit <subredditname>')
     .alias('s')
-    .description('Get posts from a subreddit.')
+    .description('Get post titles from a subreddit.')
     .action((subredditname) => {
         Reddit.getSubreddit(subredditname).getHot().map(post => post.title)
             .then(console.log)
