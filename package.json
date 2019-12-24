@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "A app that retrieves posts from a subreddit or a reddit user.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
+  "bin": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Phoenix181/scrapddit.git"
@@ -23,6 +20,8 @@
   },
   "homepage": "https://github.com/Phoenix181/scrapddit#readme",
   "dependencies": {
+    "commander": "^4.0.1",
+    "inquirer": "^7.0.1",
     "snoowrap": "^1.20.1"
   },
   "devDependencies": {

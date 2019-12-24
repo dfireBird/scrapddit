@@ -1,0 +1,6 @@
+{
+    "userAgent": "/* Put user Agent here */",
+    "clientId": "/* Put your Client Id here */",
+    "clientSecret": "/* Put your Client Secret here */",
+    "refreshToken": "/* Put refreshToken here. For more information on getting credentials, see here: https://github.com/not-an-aardvark/reddit-oauth-helper */"
+}
