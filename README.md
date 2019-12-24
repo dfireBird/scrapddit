@@ -4,6 +4,8 @@ A program to retrive posts titles from a reddit user or a subreddit.
 
 The program only retrives titles of top 25 posts from a subreddit and reddit user.
 
+Used libraries: [snoowrap](https://github.com/not-an-aardvark/snoowrap) and [commander](https://github.com/tj/commander.js)
+
 ## Usage
 
 Download the program from [here](https://github.com/Phoenix181/scrapddit/releases/tag/v1.0-beta)
@@ -32,14 +34,14 @@ scrappdit s <subredditname>
 
 List of options available:
 
-  - -V, --version                output the version number
+  - `-V, --version`                output the version number
 
-  - -h, --help                   output usage information
+  - `-h, --help`                   output usage information
 
 List of commands avaiable:
 
- - user|u <username>            Get post titles from a user.
- - subreddit|s <subredditname>  Get post titles from a subreddit.
+ - `user | u <username>`            Get post titles from a user.
+ - `subreddit | s <subredditname>`  Get post titles from a subreddit.
 
 ## Contributing
 
@@ -50,4 +52,4 @@ List of commands avaiable:
 
 Optional:
 
-Install [pkg](https://www.npmjs.com/package/pkg) to package the script into a executable!
+Install [pkg](https://github.com/zeit/pkg) to package the script into a executable!
