@@ -6,11 +6,12 @@ The program only retrives titles of top 25 posts from a subreddit and reddit use
 
 ## Usage
 
-Download the program from [here] (https://github.com/Phoenix181/scrapddit/releases/tag/v1.0-beta)
+Download the program from [here](https://github.com/Phoenix181/scrapddit/releases/tag/v1.0-beta)
 
 **Warning**: Make sure to read any script from internet before running in your PC.
 
-Usage: ```bash
+Usage: 
+```bash
 node index.js [options] [command]
 scrappdit [options] [command]
 ```
