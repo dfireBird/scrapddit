@@ -6,19 +6,17 @@ The program only retrives top 25 posts from a subreddit and reddit user.
 
 ## Usage
 
-Get the program or executable from [here] (/build).
-
 **Warning**: Make sure to read any script from internet before running in your PC.
 
-Usage: ```scrappdit [options] [command]```
+Usage: ```node index.js [options] [command]```
 
 Use `u` flag to get the top 25 posts of the user.
 
-```scrappdit u <username> ```
+```node index.js u <username> ```
 
 Use `s` flag to get the hot 25 posts of the subreddit.
 
-```scrappdit s <subredditname>```
+```node index.js s <subredditname>```
 
 List of options available:
 
