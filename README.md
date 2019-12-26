@@ -21,25 +21,34 @@ node index.js [options] [command]
 scrappdit [options] [command]
 ```
 
-Use `u` flag to get the top 25 posts titles of the user.
+Use `u` flag to get the top post titles of the user.
 
 ```bash
 node index.js u <username> 
 scrappdit u <username>
 ```
 
-Use `s` flag to get the hot 25 posts titles of the subreddit.
+Use `s` flag to get the hot post titles of the subreddit.
 
 ```bash
 node index.js s <subredditname>
 scrappdit s <subredditname>
 ```
 
+Use `-c, --count <count>` option to get a specified number of post titles. The default count is 25.
+
+```bash
+node index.js u <username> -c <count>
+node index.js s <subreddit name> -c <count>
+```
+
 List of options available:
 
-  - `-V, --version`                output the version number
+  - `-V, --version`                Output the version number
 
-  - `-h, --help`                   output usage information
+  - `-h, --help`                   Output usage information
+
+  - `-c, --count <count>`          Specify the count of posts you want (default: 25);
 
 List of commands avaiable:
 
