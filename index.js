@@ -6,18 +6,20 @@ program
     .description('Retrieves post titles from a subreddit or a reddit user. \n');
 
 program
+    .option('-c, --count <count>', 'Specify the count of posts you want', '25');
+
+program
     .command('user <username>')
     .alias('u')
     .description('Get post titles from a user.')
     .action((username) => {
-        Reddit.getUser(username).getSubmissions()
-            .then((Submissions) => {
-                const titles = Submissions.map((Submission) => {
-                    return Submission.title;
-                });
-                console.log(titles);
-            })
-            .catch(console.log)
+        if(Number(program.count) < 99) {
+            Reddit.getUser(username)
+                .getSubmissions({ limit: Number(program.count) })
+                .map(post => post.title)
+                .then(console.log)
+                .catch(console.error);
+        }
     });
 
 program
@@ -25,12 +27,20 @@ program
     .alias('s')
     .description('Get post titles from a subreddit.')
     .action((subredditname) => {
-        Reddit.getSubreddit(subredditname).getHot().map(post => post.title)
-            .then(console.log)
-            .catch(console.error);
+        if(Number(program.count) < 99) {
+            Reddit.getSubreddit(subredditname)
+                .getHot({limit: Number(program.count)})
+                .map(post => post.title)
+                .then(console.log)
+                .catch(console.error);
+        }
     });
 
 program.parse(process.argv);
+
+if(program.count >= 99) {
+    console.error('I can\'t display more than 99 items in console');
+}
 
 if(process.argv.length === 2)
     console.error('No arguments provided. \nUsage: index [options] [command]');
