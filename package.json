@@ -1,6 +1,6 @@
 {
   "name": "scrapddit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A app that retrieves posts from a subreddit or a reddit user.",
   "main": "index.js",
   "bin": "index.js",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "commander": "^4.0.1",
+    "snoostorm": "^1.3.0",
     "snoowrap": "^1.20.1"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 const Reddit = require('./src/Reddit');
 const program = require('commander');
+const livestream = require('./src/livestream');
 
 program
     .version('1.0.0')
@@ -34,6 +35,15 @@ program
                 .then(console.log)
                 .catch(console.error);
         }
+    });
+
+program
+    .command('stream <subredditname>')
+    .alias('t')
+    .description('Streams the post titles from a specified subreddit')
+    .action((subredditname) => {
+        console.log('\x1b[34m', 'Ctrl-C to quit');
+        livestream(subredditname);
     });
 
 program.parse(process.argv);
