@@ -21,17 +21,24 @@ node index.js [options] [command]
 scrappdit [options] [command]
 ```
 
-Use `u` flag to get the top post titles of the user.
+Use `u` or `user` command to get the top post titles of the user.
 
 ```bash
 node index.js u <username> 
 scrappdit u <username>
 ```
 
-Use `s` flag to get the hot post titles of the subreddit.
+Use `s` or `subreddit` command to get the hot post titles of the subreddit.
 
 ```bash
 node index.js s <subredditname>
+scrappdit s <subredditname>
+```
+
+Use `t` or `stream` command to get post titles from the subreddit and it constantly prints new post's titles as soons the someone posts it in subreddit.
+
+```bash
+node index.js t <subredditname>
 scrappdit s <subredditname>
 ```
 
@@ -54,6 +61,7 @@ List of commands avaiable:
 
  - `user | u <username>`            Get post titles from a user.
  - `subreddit | s <subredditname>`  Get post titles from a subreddit.
+ - `stream | t <subredditname>`     Stream post titles from a subreddit.
 
 ## Contributing
 
