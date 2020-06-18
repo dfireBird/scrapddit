@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "commander": "^5.1.0",
-    "snoostorm": "^1.3.0",
+    "snoostorm": "^1.4.2",
     "snoowrap": "^1.21.0"
   },
   "devDependencies": {
