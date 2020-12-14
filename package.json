@@ -23,7 +23,7 @@
     "scripts": "src/*.js"
   },
   "dependencies": {
-    "commander": "^6.2.0",
+    "commander": "^6.2.1",
     "snoostorm": "^1.5.2",
     "snoowrap": "^1.21.0"
   },
