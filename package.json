@@ -25,7 +25,7 @@
   "dependencies": {
     "commander": "^6.2.1",
     "snoostorm": "^1.5.2",
-    "snoowrap": "^1.21.0"
+    "snoowrap": "^1.22.0"
   },
   "devDependencies": {
     "eslint": "^7.16.0",
